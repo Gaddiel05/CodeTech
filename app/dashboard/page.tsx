@@ -15,6 +15,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+
 // Import icons from Lucide React
 import {
   BookOpen,
@@ -30,6 +31,7 @@ import {
   Code,
   LogOut,
 } from "lucide-react"
+
 // Import Next.js routing components
 import Link from "next/link"
 import { useRouter } from "next/navigation"

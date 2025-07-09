@@ -4,19 +4,21 @@
 // This page allows new users to create an account with email and password.
 // Includes password validation, strength indicators, and form validation.
 
+// Tell Next.js this is a client-side component
 "use client"
 
 // Import React types for TypeScript
 import type React from "react"
-
 // Import React hooks for state management
 import { useState } from "react"
+
 // Import UI components from the design system
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+
 // Import icons from Lucide React
 import { Code, Eye, EyeOff, ArrowLeft, CheckCircle } from "lucide-react"
 // Import Next.js routing components
@@ -43,6 +45,7 @@ export default function SignUpPage() {
   // Next.js router for navigation after successful signup
   const router = useRouter()
 
+  // This updates the correct input field (e.g., name, email) when the user types.
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData((prev) => ({
       ...prev,
